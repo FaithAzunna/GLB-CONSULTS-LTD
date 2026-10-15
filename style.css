@@ -267,35 +267,6 @@ a {
 
 
 /* =========================
-   PHONE
-========================= */
-
-@media (max-width: 600px) {
-
-    .hero {
-        min-height: 430px;
-        height: 430px;
-    }
-
-    .hero-content {
-        padding: 50px 7%;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-        line-height: 1.05;
-    }
-
-    .eyebrow {
-        font-size: 10px;
-    }
-
-    .hero-buttons {
-        gap: 15px;
-    }
-}
-
-/* =========================
    SERVICE STRIP
 ========================= */
 
@@ -940,279 +911,6 @@ footer {
 }
 
 
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 1100px) {
-
-    .footer-top {
-        grid-template-columns: 1.5fr 1fr 1fr;
-
-        row-gap: 50px;
-    }
-
-    .contact-column {
-        grid-column: span 2;
-    }
-
-}
-
-
-@media (max-width: 900px) {
-
-    /* NAVIGATION */
-
-    .navbar {
-        flex-wrap: wrap;
-
-        gap: 20px;
-    }
-
-
-    .navbar nav {
-        order: 3;
-
-        width: 100%;
-
-        justify-content: center;
-
-        flex-wrap: wrap;
-
-        gap: 20px;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        grid-template-columns: 1fr;
-
-        padding-top: 70px;
-    }
-
-
-    .hero-image {
-        max-width: 600px;
-    }
-
-
-    /* SERVICE STRIP */
-
-    .service-strip {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    /* ABOUT */
-
-    .intro-section {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* FEATURE */
-
-    .feature-section {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* WHY */
-
-    .why-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    /* REASONS */
-
-    .reasons-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    /* CTA */
-
-    .cta {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-
-    /* FOOTER */
-
-    .footer-top {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .contact-column {
-        grid-column: span 2;
-    }
-
-}
-
-
-/* =========================
-   PHONE
-========================= */
-
-@media (max-width: 600px) {
-
-
-    /* NAVIGATION */
-
-    .navbar {
-        padding: 20px;
-    }
-
-
-    .navbar nav {
-        gap: 14px;
-    }
-
-
-    .navbar nav a {
-        font-size: 11px;
-    }
-
-
-    .nav-button {
-        display: none;
-    }
-
-
-
-    /* HERO */
-
-    .hero {
-        padding: 60px 20px;
-    }
-
-
-    .hero h1 {
-        font-size: 52px;
-    }
-
-
-    .hero-description {
-        font-size: 14px;
-    }
-
-
-    .hero-buttons {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-
-    .hero-image img {
-        height: 400px;
-    }
-
-
-    .floating-card {
-        left: 15px;
-
-        bottom: 15px;
-    }
-
-
-
-    /* SERVICE STRIP */
-
-    .service-strip {
-        grid-template-columns: 1fr;
-    }
-
-
-    .service-strip div {
-        border-right: none;
-
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
-
-
-
-    /* SECTIONS */
-
-    .intro-section,
-    .feature-section,
-    .why-section,
-    .reasons-section,
-    .cta {
-        padding: 75px 20px;
-    }
-
-
-    .intro-title h2,
-    .feature-content h2,
-    .why-heading h2,
-    .reasons-heading h2,
-    .cta h2 {
-        font-size: 42px;
-    }
-
-
-
-    /* WHY */
-
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-
-    /* REASONS */
-
-    .reasons-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .reason-card {
-        min-height: 250px;
-    }
-
-
-
-    /* FEATURE IMAGE */
-
-    .feature-image img {
-        height: 400px;
-    }
-
-
-
-    /* FOOTER */
-
-    footer {
-        padding: 60px 20px 25px;
-    }
-
-
-    .footer-top {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-    }
-
-
-    .contact-column {
-        grid-column: span 1;
-    }
-
-
-    .footer-bottom {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-}
 
 /* =========================
    CONTACT PAGE
@@ -1488,4 +1186,431 @@ footer {
 
 .contact-left .contact-description {
     margin-bottom: 35px;
+}
+
+
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    width: 30px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1;
+    color: #12233F;
+    cursor: pointer;
+}
+
+.hamburger .close-icon {
+    display: none;
+}
+
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1100px) {
+
+    .footer-top {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        row-gap: 50px;
+    }
+
+    .contact-column {
+        grid-column: span 2;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        padding: 16px 5%;
+    }
+
+    .nav-button {
+        order: 2;
+        margin-left: auto;
+        padding: 11px 18px;
+    }
+
+    .hamburger {
+        display: block;
+        order: 3;
+        margin-left: 15px;
+    }
+
+    .navbar nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #DDD9D0;
+        box-shadow: 0 15px 30px rgba(18, 35, 63, 0.08);
+    }
+
+    .navbar nav a {
+        padding: 15px 5%;
+        border-top: 1px solid #EEEBE4;
+        font-size: 15px;
+    }
+
+    .menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    .menu-toggle:checked + .hamburger .open-icon {
+        display: none;
+    }
+
+    .menu-toggle:checked + .hamburger .close-icon {
+        display: inline;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: auto;
+        min-height: 480px;
+        padding: 120px 0 70px;
+    }
+
+    .hero-content {
+        padding: 0 5%;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        margin-bottom: 25px;
+    }
+
+
+    /* SERVICE STRIP */
+
+    .service-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-strip div {
+        padding: 25px 5%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+
+    /* SECTIONS */
+
+    .intro-section,
+    .feature-section,
+    .why-section,
+    .reasons-section,
+    .cta {
+        padding: 80px 5%;
+    }
+
+    .intro-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .intro-content {
+        padding-top: 0;
+    }
+
+    .feature-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .feature-image img {
+        height: 380px;
+    }
+
+    .intro-title h2,
+    .feature-content h2,
+    .why-heading h2,
+    .reasons-heading h2,
+    .cta h2,
+    .contact-left h2 {
+        font-size: 44px;
+    }
+
+    .why-heading,
+    .reasons-heading {
+        margin-bottom: 45px;
+    }
+
+
+    /* WHY AND REASONS CARDS */
+
+    .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-card,
+    .reason-card {
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .why-card h3 {
+        margin: 20px 0 10px;
+    }
+
+    .reason-number {
+        margin-bottom: 20px;
+    }
+
+
+    /* CTA */
+
+    .cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+
+    /* CONTACT PAGE */
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 80px 5%;
+    }
+
+    .contact-left {
+        max-width: none;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 60px 5% 25px;
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .contact-column {
+        grid-column: span 2;
+    }
+
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        padding: 14px 20px;
+    }
+
+    .logo span {
+        font-size: 22px;
+    }
+
+    .nav-button {
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+
+    .navbar nav a {
+        padding: 14px 20px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 440px;
+        padding: 110px 0 60px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .eyebrow {
+        margin-bottom: 14px;
+        font-size: 10px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .hero-buttons {
+        gap: 18px;
+    }
+
+    .primary-button {
+        padding: 13px 22px;
+    }
+
+
+    /* SERVICE STRIP */
+
+    .service-strip div {
+        padding: 20px;
+    }
+
+    .service-strip span {
+        font-size: 13px;
+    }
+
+
+    /* SECTIONS */
+
+    .intro-section,
+    .feature-section,
+    .why-section,
+    .reasons-section,
+    .cta {
+        padding: 60px 20px;
+    }
+
+    .intro-title h2,
+    .feature-content h2,
+    .why-heading h2,
+    .reasons-heading h2,
+    .cta h2,
+    .contact-left h2 {
+        font-size: 34px;
+    }
+
+    .intro-content p,
+    .reasons-intro,
+    .contact-description {
+        font-size: 14px;
+    }
+
+    .why-heading,
+    .reasons-heading {
+        margin-bottom: 35px;
+    }
+
+    .feature-section {
+        gap: 30px;
+    }
+
+    .feature-image img {
+        height: 260px;
+    }
+
+
+    /* WHY AND REASONS CARDS */
+
+    .why-grid,
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-card,
+    .reason-card {
+        padding: 25px 20px;
+    }
+
+    .why-card h3,
+    .reason-card h3 {
+        font-size: 17px;
+    }
+
+    .dark-link {
+        margin-top: 30px;
+    }
+
+
+    /* CONTACT PAGE */
+
+    .contact-section {
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .contact-card {
+        padding: 15px;
+        gap: 14px;
+    }
+
+    .contact-icon {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+        font-size: 18px;
+    }
+
+    .contact-card a {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .contact-form-box {
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 50px 20px 25px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-bottom: 40px;
+    }
+
+    .contact-column {
+        grid-column: span 1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
 }
